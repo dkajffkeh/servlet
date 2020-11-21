@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            background: black;
+            color:white;
+            width:1000px;
+            height:550px;
+            margin:auto;
+            margin-top:50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <br>
+        <h2 align="center">일반게시판 상세조회</h2>
+        <br>
+
+        <table id="detail_area" align="center" border="1px">
+            <tr>
+                <th width="70">분야</th>
+                <th width="70">운동</th>
+                <th width="70">제목</th>
+                <td width="350">제목이 들어와야함</td>
+            </tr>
+            <tr>
+                <th>작성자</th>
+                <th>user01</th>
+                <th>작성일</th>
+                <td>2020-10-23</td>
+            </tr>
+            <tr>
+                <th>내용</th>
+            <td colspan="3">
+                <p style="height:200px">내용이 들어와야함.</p>
+            </td>
+            </tr>
+            <tr>
+                <th>첨부파일</th>
+                <td colspan="3">첨부파일이 없습니다.
+
+                    <!-- 첨부 파일이 있을경우 -->
+                    <!-- <a href="">파일의 원본명.</a> -->
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <!-- 본인일 경우만 보여짐.  -->
+        <div align="center">
+            <a href="" class="btn btn-primary btn-sm">수정하기페이지</a>
+            <a href="" class="btn btn-primary btn-sm">삭제하기</a>
+        </div>
+    </div>
+</body>
+</html>

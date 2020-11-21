@@ -35,7 +35,6 @@ public class NoticeDao {
 
 	public ArrayList<Notice> selectNoticeList(Connection conn) {
 		// TODO Auto-generated method stub
-		
 		Statement stmt = null;
 		ResultSet rs = null;
 		ArrayList<Notice> list = new ArrayList();

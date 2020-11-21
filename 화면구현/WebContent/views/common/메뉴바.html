@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loginForm,
+        #userInfo {
+            float: right;
+            border: 1px solid black;
+        }
+
+        #userInfo a {
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .navWraper {
+            background-color: black;
+            display: flex;
+            justify-content: center
+        }
+
+
+
+        .menu {
+            display: table-cell;
+            height: 50px;
+            width: 150px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 1.4rem;
+            line-height: 50px;
+        }
+
+        .menu a:hover {
+            background: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Welcome JSP World</h1>
+    <!-- 로그인 전에 보여지는 로그인 폼. -->
+
+    <div class="loginArea">
+        <form action="#" id="loginForm" method="POST">
+            <table>
+                <tr>
+                    <th><label for="userId">아이디</label></th>
+                    <th><input type="text" id="userId" name="userId" required></th>
+                </tr>
+                <tr>
+                    <th><label for="userPwd">비밀번호</label></th>
+                    <th><input type="password" id="userPwd" name="userPwd" required></th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button type="submit">
+                            로그인
+                        </button>
+                        <button type="button">회원가입</button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <br clear="both">
+    <br>
+
+    <div class="navWraper">
+        <div class="menu"><a href="">Home</a></div>
+        <div class="menu"><a href="">공지사항</a></div>
+        <div class="menu"><a href="">일반게시판</a></div>
+        <div class="menu"><a href="">사진게시판</a></div>
+    </div>
+
+    <!-- 로그인 성공수 보여질 div -->
+    <!--  
+    <div id="userInfo">
+        <b>OOO님</b> 의 방문을 환영합니다
+        <div>
+            <a href="">마이페이지</a>
+            <a href="">로그아웃</a>
+        </div>
+    </div>
+
+  
+    -->
+</body>
+
+</html>

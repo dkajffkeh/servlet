@@ -32,12 +32,12 @@ Notice n = (Notice)request.getAttribute("n");
 </head>
 <body>
 
-<%@ include file="../common/menubar.jsp" %>
+<jsp:include page="../common/menubar.jsp"></jsp:include>
     <div class=outer>
         <br>
         <h2 align="center">공지사항 수정하기</h2>
         <br>
-    <form action="<%=getPath%>/update.no" id="updateForm" method="post">
+    <form action="update.no" id="updateForm" method="post">
     <input type="hidden" name="nno" value="<%=n.getNoticeNo()%>">
 			<table align="center">
 				<tr>
